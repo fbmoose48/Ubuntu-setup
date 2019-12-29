@@ -8,18 +8,18 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 
 sudo apt update
 
-sudo apt install gparted cmake net-tools htop lame git mc flatpak audacity \
+sudo apt install gparted cmake build-essential net-tools htop lame git mc flatpak audacity \
 openssh-server sshfs gedit-plugin-text-size simplescreenrecorder nano \
 ubuntu-restricted-extras flashplugin-installer mpv vlc gthumb \
 gnome-tweaks gnome-tweak-tool dconf-editor \
 qt5-style-plugins spell synaptic apt-xapian-index \
 chrome-gnome-shell chromium-browser tor expressvpn -yy
 
-# Add PPAs
+# Add and Install PPAs
 sudo add-apt-repository ppa:yannubuntu/boot-repair
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 sudo apt-get update
-sudo apt-get install -yy boot-repair grub-customizer
+sudo apt-get install -y boot-repair grub-customizer
 
 # Add me to any groups I might need to be a part of:
 
@@ -28,6 +28,10 @@ sudo apt-get install -yy boot-repair grub-customizer
 # Remove undesirable packages:
 
 sudo apt purge gstreamer1.0-fluendo-mp3 deja-dup shotwell popularity-contest whoopsie whoopsie-preferences -yy
+
+# Remove Assorted Arabic/Asian language font types
+
+sudo apt purge ttf-arabeyes ttf-arphic-uming ttf-indic-fonts-core ttf-kochi-gothic ttf-kochi-mincho ttf-lao ttf-malayalam-fonts ttf-thai-tlwg ttf-unfonts-core -yy
 
 # Remove snaps and get packages from apt:
 
@@ -39,13 +43,17 @@ gnome-software-plugin-flatpak -yy
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
 ## Remove junk
-sudo apt-get remove ubuntu-web-launchers rhythmbox -y
+sudo apt-get remove ubuntu-web-launchers rhythmbox transmission-common transmission-gtk -y
+
+# Clean Apt-Cache
+
+sudo apt-get autoremove && sudo apt-get clean all && sudo apt-get autoclean all
 
 ## Multimedia
-sudo apt-get install -y gimp scribus
+# sudo apt-get install -y gimp scribus
 
 ## Games
-sudo apt-get install -y steam-installer
+# sudo apt-get install -y steam-installer
 
 ## Turn off Ubuntu-report
 

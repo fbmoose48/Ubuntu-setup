@@ -10,6 +10,7 @@ sudo apt install gparted cmake build-essential net-tools htop lame git mc nmap f
 openssh-server sshfs openvpn gedit-plugin-text-size openjdk-11-jre nano soundconverter timeshift \
 ubuntu-restricted-extras flashplugin-installer mpv vlc gthumb furiusisomount solaar solaar-gnome3\
 gnome-tweaks gnome-tweak-tool dconf-editor qt5-style-plugins spell synaptic apt-xapian-index \
+virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack \
 chrome-gnome-shell chromium-browser tor expressvpn nextcloud-desktop -yy
 
 # Add and Install PPAs
@@ -19,7 +20,7 @@ sudo apt-get update
 sudo apt-get install -y boot-repair grub-customizer
 
 # Add me to any groups I might need to be a part of:
-#sudo adduser $USER vboxusers
+sudo usermod -a -G vboxusers,video $USER
 
 # Remove undesirable packages:
 sudo apt purge gstreamer1.0-fluendo-mp3 deja-dup shotwell popularity-contest whoopsie whoopsie-preferences -yy

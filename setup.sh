@@ -8,10 +8,10 @@ sudo apt update
 
 sudo apt install gparted cmake build-essential net-tools htop lame git mc nmap flatpak audacity qbittorrent \
 openssh-server sshfs openvpn gedit-plugin-text-size openjdk-11-jre nano soundconverter timeshift \
-ubuntu-restricted-extras flashplugin-installer mpv vlc gthumb furiusisomount solaar solaar-gnome3\
+ubuntu-restricted-extras flashplugin-installer mpv vlc gthumb furiusisomount solaar solaar-gnome3 \
 gnome-tweaks gnome-tweak-tool dconf-editor qt5-style-plugins spell synaptic apt-xapian-index \
 virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack \
-chrome-gnome-shell chromium-browser tor expressvpn nextcloud-desktop -yy
+chrome-gnome-shell chromium-browser tor nextcloud-desktop -yy
 
 # Add and Install PPAs
 sudo add-apt-repository ppa:yannubuntu/boot-repair

@@ -16,8 +16,11 @@ chrome-gnome-shell chromium-browser tor nextcloud-desktop -yy
 # Add and Install PPAs
 sudo add-apt-repository ppa:yannubuntu/boot-repair
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo add-apt-repository ppa:mkusb/ppa
+sudo add-apt-repository ppa:gezakovacs/ppa
 sudo apt-get update
-sudo apt-get install -y boot-repair grub-customizer
+sudo apt-get install -y boot-repair grub-customizer mkusb mkusb-nox unetbootin
+
 
 # Add me to any groups I might need to be a part of:
 sudo usermod -a -G vboxusers,video $USER

@@ -6,12 +6,12 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 # Initial Software
 sudo apt update
 
-sudo apt install ubuntu-restricted-extras openssh-server sshfs openvpn nmap git net-tools \ #connectivity
-nano htop flatpak qt5-style-plugins furiusisomount timeshift spell gedit-plugin-text-size \ #tools
-cmake gettext build-essential hwloc openssl libmicrohttpd numactl msr-tools \ #crypto/compile
-chromium-browser tor openjdk-11-jre flashplugin-installer qbittorrent \ #web
-lame mpv vlc gthumb audacity soundconverter solaar solaar-gnome3 \ #media
-gparted gnome-tweaks gnome-tweak-tool dconf-editor chrome-gnome-shell synaptic apt-xapian-index \ #gnome tools
+sudo apt install ubuntu-restricted-extras openssh-server sshfs openvpn nmap git net-tools \ 
+nano htop flatpak qt5-style-plugins furiusisomount timeshift spell gedit-plugin-text-size \ 
+cmake gettext build-essential hwloc openssl numactl msr-tools \ 
+chromium-browser tor openjdk-11-jre flashplugin-installer qbittorrent \ 
+lame mpv vlc gthumb audacity soundconverter solaar solaar-gnome3 \ 
+gparted gnome-tweaks gnome-tweak-tool dconf-editor chrome-gnome-shell synaptic apt-xapian-index \ 
 virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack nextcloud-desktop -yy
 
 # Add and Install PPAs

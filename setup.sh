@@ -6,12 +6,13 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 # Initial Software
 sudo apt update
 
-sudo apt install gparted cmake build-essential net-tools htop lame git mc nmap flatpak audacity qbittorrent \
-openssh-server sshfs openvpn gedit-plugin-text-size openjdk-11-jre nano soundconverter timeshift \
-ubuntu-restricted-extras flashplugin-installer mpv vlc gthumb furiusisomount solaar solaar-gnome3 \
-gnome-tweaks gnome-tweak-tool dconf-editor qt5-style-plugins spell synaptic apt-xapian-index \
-virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack \
-chrome-gnome-shell chromium-browser tor nextcloud-desktop -yy
+sudo apt install ubuntu-restricted-extras openssh-server sshfs openvpn nmap git net-tools \ #connectivity
+nano htop flatpak qt5-style-plugins furiusisomount timeshift spell gedit-plugin-text-size \ #tools
+cmake gettext build-essential hwloc openssl libmicrohttpd numactl msr-tools \ #crypto/compile
+chromium-browser tor openjdk-11-jre flashplugin-installer qbittorrent \ #web
+lame mpv vlc gthumb audacity soundconverter solaar solaar-gnome3 \ #media
+gparted gnome-tweaks gnome-tweak-tool dconf-editor chrome-gnome-shell synaptic apt-xapian-index \ #gnome tools
+virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack nextcloud-desktop -yy
 
 # Add and Install PPAs
 sudo add-apt-repository ppa:yannubuntu/boot-repair

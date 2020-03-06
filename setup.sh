@@ -7,7 +7,7 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 sudo apt update
 
 sudo apt install ubuntu-restricted-extras openssh-server sshfs openvpn nmap git net-tools \ 
-nano htop flatpak qt5-style-plugins furiusisomount timeshift spell gedit-plugin-text-size \ 
+nano htop flatpak qt5-style-plugins furiusisomount timeshift spell neofetch \ 
 cmake gettext build-essential hwloc openssl numactl msr-tools \ 
 chromium-browser tor openjdk-11-jre flashplugin-installer qbittorrent \ 
 lame mpv vlc gthumb audacity soundconverter solaar solaar-gnome3 \ 

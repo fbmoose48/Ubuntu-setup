@@ -76,6 +76,9 @@ sudo sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
 ## Turn off Live Update Icon
 gsettings set com.ubuntu.update-notifier show-livepatch-status-icon false
 
+# Disable GDM Auto-Suspend (Gnome) When no User is logged in
+sudo -u gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+
 # Reboot Notification:
 sudo apt update && sudo apt upgrade -y
 

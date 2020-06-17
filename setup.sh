@@ -3,16 +3,27 @@
 # Ubuntu (GNOME) 18.04 setup script.
 dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 
-# Initial Software
+# Initial Update
 sudo apt update
 
-sudo apt install ubuntu-restricted-extras openssh-server sshfs openvpn nmap git net-tools \ 
-nano htop flatpak qt5-style-plugins furiusisomount timeshift spell neofetch \ 
-cmake gettext build-essential hwloc openssl numactl msr-tools \ 
-chromium-browser tor openjdk-11-jre flashplugin-installer qbittorrent \ 
-lame mpv vlc gthumb audacity soundconverter solaar solaar-gnome3 \ 
-gparted gnome-tweaks gnome-tweak-tool dconf-editor chrome-gnome-shell synaptic apt-xapian-index \ 
-virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack nextcloud-desktop -yy
+# Base system
+sudo apt install ubuntu-restricted-extras openssh-server sshfs openvpn nmap git net-tools nano htop spell neofetch -yy
+
+
+sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools  -yy
+
+
+sudo apt install tor openjdk-11-jre flashplugin-installer transmission nextcloud-desktop -yy
+
+
+sudo apt install lame mpv vlc gthumb audacity soundconverter  -yy
+
+
+sudo apt install gparted gnome-tweaks gnome-tweak-tool dconf-editor chrome-gnome-shell synaptic apt-xapian-index solaar solaar-gnome3  -yy
+
+
+
+flatpak qt5-style-plugins furiusisomount timeshift chromium-browser virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack 
 
 # Add and Install PPAs
 sudo add-apt-repository ppa:yannubuntu/boot-repair

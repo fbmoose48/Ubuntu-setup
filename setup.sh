@@ -7,13 +7,13 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 sudo apt update
 
 # Base system
-sudo apt install ubuntu-restricted-extras gparted gnome-tweaks gnome-tweak-tool dconf-editor synaptic apt-xapian-index solaar solaar-gnome3 nano htop spell neofetch -y
+sudo apt install ubuntu-restricted-extras gparted gnome-tweaks gnome-tweak-tool dconf-editor terminator xarchiver synaptic apt-xapian-index conky solaar solaar-gnome3 nano htop spell neofetch -y
 
 # Web
 sudo apt install openssh-server sshfs openvpn nmap git net-tools openjdk-11-jre flashplugin-installer transmission tor chrome-gnome-shell -y
 
 # Build tools
-sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools  -y
+sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools geany -y
 
 # Media
 #sudo apt install lame mpv vlc gthumb audacity soundconverter nextcloud-desktop gimp scribus -y

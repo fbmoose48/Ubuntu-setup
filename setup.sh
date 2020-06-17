@@ -7,10 +7,16 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 sudo apt update
 
 # Base system
-sudo apt install ubuntu-restricted-extras gparted gnome-tweaks gnome-tweak-tool dconf-editor terminator xarchiver synaptic apt-xapian-index conky solaar solaar-gnome3 nano htop spell neofetch -y
+sudo apt install ubuntu-restricted-extras git gparted terminator xarchiver synaptic apt-xapian-index conky solaar nano htop spell neofetch -y
+
+# Network
+sudo apt install openssh-server sshfs openvpn nmap net-tools -y
+
+# Gnome
+#sudo apt install gnome-tweaks gnome-tweak-tool dconf-editor chrome-gnome-shell solaar-gnome3 -y
 
 # Web
-sudo apt install openssh-server sshfs openvpn nmap git net-tools openjdk-11-jre flashplugin-installer transmission tor chrome-gnome-shell -y
+sudo apt install openjdk-11-jre flashplugin-installer transmission tor -y
 
 # Build tools
 sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools geany -y
@@ -50,17 +56,17 @@ sudo apt purge ppp pppconfig pppoeconf -y
 sudo apt purge gnome-games gnome-games-data gnome-cards-data aisleriot gnome-mahjongg gnome-mines gnome-sudoku -y
 
 # Remove snaps and get packages from apt:
-sudo snap remove gnome-characters gnome-calculator gnome-system-monitor gnome-logs gnome-system-monitor gtk-common-themes libreoffice -y
-sudo apt install gnome-characters gnome-calculator gnome-system-monitor gnome-logs gnome-system-monitor gtk-common-themes libreoffice -y
+#sudo snap remove gnome-characters gnome-calculator gnome-system-monitor gnome-logs gnome-system-monitor gtk-common-themes libreoffice -y
+#sudo apt install gnome-characters gnome-calculator gnome-system-monitor gnome-logs gnome-system-monitor gtk-common-themes libreoffice -y
 
 #Add flathub repo
 #flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 #set icons to minimize on click
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+#gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
 #move apps button to top
-gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top 'on'
+#gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top 'on'
 
 ## Remove junk
 sudo apt-get remove ubuntu-web-launchers rhythmbox -y

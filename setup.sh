@@ -19,7 +19,10 @@ sudo apt install openssh-server sshfs openvpn nmap net-tools -y
 sudo apt install openjdk-11-jre flashplugin-installer transmission tor -y
 
 # Build tools
-sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools geany flex bison gnat acpica-tools -y
+sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools geany -y
+
+# Coreboot
+sudo apt install gnat flex bison libncurses5-dev wget zlib1g-dev acpica-tools -y
 
 # Media
 #sudo apt install lame mpv vlc gthumb audacity soundconverter nextcloud-desktop gimp scribus -y

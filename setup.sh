@@ -22,7 +22,7 @@ sudo apt install openjdk-11-jre flashplugin-installer transmission tor -y
 sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools geany -y
 
 # Coreboot
-sudo apt install gnat flex bison libncurses5-dev wget zlib1g-dev acpica-tools -y
+sudo apt install python gnat flex bison libncurses5-dev wget zlib1g-dev acpica-tools -y
 
 # Media
 #sudo apt install lame mpv vlc gthumb audacity soundconverter nextcloud-desktop gimp scribus -y

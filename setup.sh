@@ -7,7 +7,7 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 sudo apt update
 
 # Base system
-sudo apt install ubuntu-restricted-extras git gparted terminator xarchiver synaptic apt-xapian-index conky solaar nano htop spell flex bison gnat neofetch -y
+sudo apt install ubuntu-restricted-extras git gparted terminator xarchiver synaptic apt-xapian-index conky solaar nano htop spell neofetch -y
 
 # Network
 sudo apt install openssh-server sshfs openvpn nmap net-tools -y
@@ -19,7 +19,7 @@ sudo apt install openssh-server sshfs openvpn nmap net-tools -y
 sudo apt install openjdk-11-jre flashplugin-installer transmission tor -y
 
 # Build tools
-sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools geany -y
+sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools geany flex bison gnat acpica-tools -y
 
 # Media
 #sudo apt install lame mpv vlc gthumb audacity soundconverter nextcloud-desktop gimp scribus -y

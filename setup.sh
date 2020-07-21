@@ -7,7 +7,7 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 sudo apt update
 
 # Base system
-sudo apt install ubuntu-restricted-extras git gparted terminator xarchiver synaptic apt-xapian-index conky solaar nano htop spell neofetch -y
+sudo apt install ubuntu-restricted-extras git gparted terminator xarchiver synaptic apt-xapian-index conky solaar nano htop spell neofetch nnn -y
 
 # Network
 sudo apt install openssh-server sshfs openvpn nmap net-tools -y

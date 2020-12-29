@@ -16,13 +16,13 @@ sudo apt install openssh-server sshfs openvpn nmap net-tools -y
 #sudo apt install gnome-tweaks gnome-tweak-tool dconf-editor chrome-gnome-shell solaar-gnome3 -y
 
 # Web
-sudo apt install openjdk-11-jre flashplugin-installer transmission tor -y
+#sudo apt install openjdk-11-jre flashplugin-installer transmission tor -y
 
 # Build tools
 sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools geany -y
 
 # Coreboot
-sudo apt install python gnat flex bison libncurses5-dev wget zlib1g-dev acpica-tools -y
+#sudo apt install python gnat flex bison libncurses5-dev wget zlib1g-dev acpica-tools -y
 
 # Media
 #sudo apt install lame mpv vlc gthumb audacity soundconverter nextcloud-desktop gimp scribus -y
@@ -76,9 +76,6 @@ sudo apt-get remove ubuntu-web-launchers rhythmbox -y
 
 # Clean Apt-Cache
 sudo apt-get autoremove && sudo apt-get clean all && sudo apt-get autoclean all
-
-## Games
-# sudo apt-get install -y steam-installer
 
 ## Turn off Ubuntu-report
 ubuntu-report -f send no

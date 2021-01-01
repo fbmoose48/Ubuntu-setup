@@ -7,7 +7,7 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 sudo apt update
 
 # Base system
-sudo apt install ubuntu-restricted-extras git gparted terminator xarchiver synaptic apt-xapian-index conky solaar nano htop spell neofetch nnn -y
+sudo apt install ubuntu-restricted-extras git gparted terminator lxterminal xarchiver synaptic apt-xapian-index conky solaar nano htop spell neofetch nnn -y
 
 # Network
 sudo apt install openssh-server sshfs openvpn nmap net-tools -y
@@ -37,11 +37,11 @@ sudo apt install cmake gettext build-essential hwloc openssl numactl msr-tools g
 # Add and Install PPAs
 sudo add-apt-repository ppa:yannubuntu/boot-repair
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-sudo add-apt-repository ppa:mkusb/ppa
-sudo add-apt-repository ppa:gezakovacs/ppa
-sudo apt-get update
-sudo apt-get install -y boot-repair grub-customizer mkusb mkusb-nox unetbootin
-
+#sudo add-apt-repository ppa:mkusb/ppa
+#sudo add-apt-repository ppa:gezakovacs/ppa
+sudo apt-get update -y
+sudo apt-get install -y boot-repair grub-customizer
+#sudo apt-get install -y mkusb mkusb-nox unetbootin
 
 # Add me to any groups I might need to be a part of:
 sudo usermod -a -G video $USER

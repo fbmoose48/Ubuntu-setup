@@ -13,7 +13,7 @@ sudo apt install ubuntu-restricted-extras git gparted terminator lxterminal spac
 sudo apt install openssh-server sshfs openvpn nmap net-tools -y
 
 # Gnome
-#sudo apt install gnome-tweaks gnome-tweak-tool dconf-editor chrome-gnome-shell solaar-gnome3 -y
+#sudo apt install gnome-tweaks gnome-tweak-tool gnome-icon-theme dconf-editor chrome-gnome-shell solaar-gnome3 -y
 
 # Web
 #sudo apt install openjdk-11-jre flashplugin-installer transmission tor -y

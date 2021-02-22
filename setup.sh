@@ -1,13 +1,19 @@
 #!/bin/bash
 
-# Ubuntu (GNOME) 18.04 setup script.
-dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
+# Ubuntu setup script.
+#dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 
 # Initial Update
 sudo apt update
 
+# Xorg
+sudo apt install xserver-xorg-core libxinerama-dev libfontconfig1-dev libharfbuzz-dev xorg-dev x11-xserver-utils -y
+
 # Base system
-sudo apt install ubuntu-restricted-extras git gparted terminator lxterminal spacefm-gtk3 xarchiver synaptic apt-xapian-index conky solaar nano htop spell neofetch nnn -y
+sudo apt install ubuntu-restricted-extras git gparted terminator lxterminal spacefm-gtk3 xarchiver synaptic apt-xapian-index conky solaar nano htop spell neofetch powertop lm-sensors nnn -y
+
+# DWM
+sudo apt install fonts-hack fonts-powerline compton lxrandr nitrogen stalonetray -y
 
 # Network
 sudo apt install openssh-server sshfs openvpn nmap net-tools -y

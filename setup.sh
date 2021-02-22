@@ -7,16 +7,23 @@
 sudo apt update
 
 # Xorg
-sudo apt install xserver-xorg-core libxinerama-dev libfontconfig1-dev libharfbuzz-dev xorg-dev x11-xserver-utils -y
+sudo apt install xserver-xorg-core libxinerama-dev libfontconfig1-dev libharfbuzz-dev xorg-dev x11-xserver-utils xterm xserver-xorg-input-all -y
+sudo apt install xinit --no-install-recommends --no-install-suggests -y
 
 # Base system
-sudo apt install ubuntu-restricted-extras git gparted terminator lxterminal spacefm-gtk3 xarchiver synaptic apt-xapian-index conky solaar nano htop spell neofetch powertop lm-sensors nnn -y
+sudo apt install ubuntu-restricted-extras git gparted terminator lxterminal spacefm-gtk3 unzip xarchiver nano htop spell neofetch powertop lm-sensors nnn -y
 
 # DWM
 sudo apt install fonts-hack fonts-powerline compton lxrandr nitrogen stalonetray -y
 
+# Greeter
+sudo apt install lightdm lightdm-gtk-greeter --no-install-recommends --no-install-suggests -y
+
 # Network
 sudo apt install openssh-server sshfs openvpn nmap net-tools -y
+
+# Desktop tools
+sudo apt install synaptic apt-xapian-index conky solaar -y
 
 # Gnome
 #sudo apt install gnome-tweaks gnome-tweak-tool gnome-icon-theme dconf-editor chrome-gnome-shell solaar-gnome3 -y

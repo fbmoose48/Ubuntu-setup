@@ -12,7 +12,7 @@ sudo apt install xinit --no-install-recommends --no-install-suggests -y
 
 # Base system
 sudo apt install ubuntu-restricted-extras yaru-theme-icon gparted lxterminal spacefm-gtk3 unzip xarchiver nano nnn -y
-sudo apt install git htop spell neofetch powertop lm-sensors -y
+sudo apt install git htop spell neofetch powertop sysstat lm-sensors -y
 sudo apt install terminator --no-install-recommends --no-install-suggests -y
 
 # DWM

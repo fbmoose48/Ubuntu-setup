@@ -17,7 +17,7 @@ sudo apt install git htop spell neofetch powertop sysstat lm-sensors -y
 sudo apt install terminator --no-install-recommends --no-install-suggests -y
 
 # DWM
-sudo apt install fonts-hack fonts-powerline compton lxrandr nitrogen stalonetray -y
+sudo apt install fonts-hack fonts-powerline compton lxrandr lxappearance nitrogen stalonetray -y
 
 # Greeter
 #sudo apt install lightdm lightdm-gtk-greeter --no-install-recommends --no-install-suggests -y
